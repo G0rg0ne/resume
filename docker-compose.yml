@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  portfolio:
+    build: .
+    container_name: react-portfolio
+    restart: always
+    ports:
+      - "80:80"
+    environment:
+      - NODE_ENV=production 
